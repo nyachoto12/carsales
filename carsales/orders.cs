@@ -105,9 +105,7 @@ namespace carsales
         DataTable table = new DataTable();
         private void orders_Load(object sender, EventArgs e)
         {
-            string mydate = ORDERdATE.Text;
-            mydate.Replace(",", "");
-            MessageBox.Show("Successfully added order for '" + mydate.ToString() + "'");
+            
             loadCustomers();
             loadProducts();
             catFill();
@@ -283,6 +281,7 @@ namespace carsales
         {
 
             vieworders orders = new vieworders();
+            this.Hide();
             orders.Show();
         }
 
